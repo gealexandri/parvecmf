@@ -4,7 +4,7 @@ Repository containing the implementation of the ParVecMF methodology introduced 
 
 ## Requirements
 
-1. Java Version 1.8
+1. Oracle Java Version 1.8
 2. Apache Maven 3.6.0
 
 ## Usage
@@ -16,6 +16,20 @@ Repository containing the implementation of the ParVecMF methodology introduced 
 Class documentation is also available at the ```./javadoc/``` directory of the currrent repository.
 
 For a working example, please clone the [parvecmf-example](https://git.islab.ntua.gr/gealexandri/parvecmf-example) repository.
+
+## Server Certificate Error when cloning
+
+If you experience the error below when trying to clone the repository
+
+<pre>
+fatal: unable to access 'https://git.islab.ntua.gr/gealexandri/parvecmf-example.git/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
+</pre>
+
+issue the following command 
+
+```export GIT_SSL_NO_VERIFY=1``` 
+
+and then try again.
 
 ## Paragraph Vectors for Users & Items
 
