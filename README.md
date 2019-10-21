@@ -9,7 +9,7 @@ Repository containing the implementation of the ParVecMF methodology introduced 
 
 ## Usage
 
-1. Clone the repository to a local folder 
+1. Clone the repository to a local folder, using the HTTPS URL (e.g. ```git clone https://git.islab.ntua.gr/gealexandri/parvecmf.git```)
 2. Change to that folder and issue ```mvn package```
 3. Install the generated jar files to your local maven repository, issuing ```mvn install:install-file -Dfile=./target/parvecmf-0.0.1.jar -DpomFile=./pom.xml -Dsources=./target/parvecmf-0.0.1-sources.jar -Djavadoc=./target/parvecmf-0.0.1-javadoc.jar```
 
