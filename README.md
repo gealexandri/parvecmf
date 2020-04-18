@@ -9,31 +9,18 @@ Repository containing the implementation of the ParVecMF methodology introduced 
 
 ## Usage
 
-1. Clone the repository to a local folder, using the HTTPS URL (e.g. ```git clone https://git.islab.ntua.gr/gealexandri/parvecmf.git```)
+1. Clone the repository to a local folderL (e.g. ```git clone https://github.com/gealexandri/parvecmf.git```)
 2. Change to that folder and issue ```mvn package```
 3. Install the generated jar files to your local maven repository, issuing ```mvn install:install-file -Dfile=./target/parvecmf-0.0.1.jar -DpomFile=./pom.xml -Dsources=./target/parvecmf-0.0.1-sources.jar -Djavadoc=./target/parvecmf-0.0.1-javadoc.jar```
 
 Class documentation is also available at the ```./javadoc/``` directory of the currrent repository.
 
-For a working example, please clone the [parvecmf-example](https://git.islab.ntua.gr/gealexandri/parvecmf-example) repository.
+For a working example, please clone the [parvecmf-example](https://github.com/gealexandri/parvecmf-example) repository.
 
-## Server Certificate Error when cloning
-
-If you experience the error below when trying to clone the repository
-
-<pre>
-fatal: unable to access 'https://git.islab.ntua.gr/gealexandri/parvecmf-example.git/': server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none
-</pre>
-
-issue the following command 
-
-```export GIT_SSL_NO_VERIFY=1``` 
-
-and then try again.
 
 ## Paragraph Vectors for Users & Items
 
-The paragraph vectors of the user/item reviews are introduced as external text files to the [ParVecMFFactorizer](https://git.islab.ntua.gr/gealexandri/parvecmf/src/master/javadoc/islab/parvecmf/factorizer/ParVecMFFactorizer.html) class. Their structure should be as follows
+The paragraph vectors of the user/item reviews are introduced as external text files to the [ParVecMFFactorizer](https://htmlpreview.github.io/?https://github.com/gealexandri/parvecmf/blob/master/javadoc/islab/parvecmf/factorizer/ParVecMFFactorizer.html) class. Their structure should be as follows
 
 <pre>
 N F
